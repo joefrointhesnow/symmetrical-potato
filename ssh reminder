@@ -1,0 +1,6 @@
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+ssh-add ~/.ssh/<Key name not the PUB>
+copy pub to github
+test with
+
+ssh -T git@github.com
