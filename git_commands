@@ -1,0 +1,35 @@
+# To create a new repository
+$ git init
+
+### <remote_name> isn normally called origin
+### and main branch is normally master
+
+# To add a github repository to push to
+$ git remote add <remote_name> git@github.com:joefrointhesnow/<repository>
+
+# To push to repository
+$ git push -u <remote_name> <branch_name>
+
+# To add files to be pushed
+$ git add <files>
+
+# To create a new branch
+$ git branch <branch_name>
+
+### Branch must be made locally before pushing
+
+# To create a new remote branch
+$ git push <remote_name> <branch_name>
+
+# To switch branches
+$ git checkout <branch_name>
+
+# delete remote branch
+$ git push <remote_name> :<branch_name>
+$ git push <remote_name> --delete <branch_name>
+
+# delete local branch
+$ git branch -d <branch_name>
+
+# Save branch without commiting
+$ git stash

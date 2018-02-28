@@ -1,0 +1,10 @@
+rails s -p $PORT -b $IP
+
+ rails new 'mynewproject' -d postgresql
+
+reset rails
+spring stop
+
+http://guides.rubyonrails.org/getting_started.html
+
+https://medium.com/@obrientimothya/developing-ruby-on-rails-5-1-apps-with-the-aws-cloud9-ide-18826ae1426b

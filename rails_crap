@@ -1,0 +1,33 @@
+# New rails project
+$ rails new <project>
+
+# To create a new controller, you will need to run the "controller" generator and tell it you want a controller called "Welcome" with an action called "index", just like this
+$ bin/rails generate controller Welcome index
+
+Using the request/response cycle as a guide, this has been our workflow when making a Rails app.
+
+https://www.codecademy.com/articles/request-response-cycle-static
+
+1.  Generate a new Rails app.
+2.  Generate a controller and add an action.
+3.  Create a route that maps a URL to the controller action.
+4.  Create a view with HTML and CSS.
+5.  Run the local web server and preview the app in the browser
+
+A data base works like this I guess
+
+1.  When you type http://localhost:8000/welcome, the browser makes a request for the URL /welcome.
+2.  The request hits the Rails router.
+3.  The router maps the URL to a controller action to handle the request.
+4.  The controller action recieves the request, and asks the model to fetch data from the database.
+5.  The model returns data to the controller action.
+6.  The controller action passes the data on to the view.
+7.  The view renders the page as HTML.
+8.  The controller sends the HTML back to the browser.
+
+When in doubt!
+rake db:migrate
+rake db:seed
+
+#Common routes to be used by controllers
+https://www.codecademy.com/articles/standard-controller-actions
